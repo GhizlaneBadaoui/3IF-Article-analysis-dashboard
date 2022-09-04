@@ -7,7 +7,7 @@
 - /csv_files : contient les fichiers CSV contenant des données filtrées depuis Elasticsearch
 - app.py : contient les composants HTML et Callbacks pour interagir avec l'application.
 - file.py : contient les fonctions de manipulation de données de Elasticsearch (rajouter des nouveaux champs: NER, POS Tagging ... et supprimer, ajouter, lister des index)
-- main.py : c'est où on fait appel aux fonctions de file.py qui sont nécessaires avant le lancement de l'application de file.py ( pour les POS Tagging, les NERs, le sauvegarde des données dans des fichiers CSV, ...) 
+- main.py : la zone d'appel aux fonctions nécessaires au lancement de l'application (pour les POS Tagging, les NERs, le sauvegarde des données dans des fichiers CSV, ...) 
 - functions.py : contient les données filtrées envoyées aux graphes.
     
 ## Lancer l'application :
