@@ -4,6 +4,7 @@
 """
 import base64
 import time
+import warnings
 from datetime import timedelta
 from io import BytesIO
 from itertools import chain
@@ -19,12 +20,16 @@ from dash import dcc
 from dash import html
 from dash.dependencies import Input, Output
 from dash.dependencies import State, ALL
+from elasticsearch.exceptions import ElasticsearchWarning
 
 from functions import extreme_dates, docs_per_periode, data_table, iterate_whole_es, docs_per_source, plot_wordcloud, \
     significant_words, data_for_map_chart, tokens_size, data_for_bubble_chart, count_articles, cytoscape_data, \
     locations_processing
 
 start_time = time.time()
+
+# Ignore ElasticsearchWarning
+warnings.simplefilter(action='ignore', category=ElasticsearchWarning)
 
 # Index of the Elasticsearch document used in this project
 index_name = "livrons_journaux"
