@@ -29,7 +29,7 @@ def docs_per_periode(start_date, end_date, interval, index_name):
         -> used for LIVE GRAPH, BAR CHART & LINE CHART
     """
     # Get data from Elasticsearch and make it in Dataframe
-    # tata safi zid hhhhh
+    
     result = es.search(index=index_name, body={
         "query": {
             "bool": {
