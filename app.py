@@ -1017,7 +1017,3 @@ if __name__ == '__main__':
 
 print(">>> Execution time of app.py :", time.time() - start_time)
 
-'''
-readme
-github
-'''
