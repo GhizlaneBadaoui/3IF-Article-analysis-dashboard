@@ -11,7 +11,7 @@
 - functions.py : contient les données filtrées envoyées aux graphes.
     
 ## Lancer l'application :
-  - Commande : python app.py
+  - Commande : python main.py, puis python app.py
 
 ## Version Elasticsearch : 7.17.5
 
