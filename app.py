@@ -295,7 +295,7 @@ app.layout = html.Div((
         ], className='create_container2 two columns', style={'width': '1510px', 'height': '400px'}),
     ), className="row flex-display"),
 
-    # Network graph part
+    # Network graph part 
     html.Div([
         html.P(children="Network graph", className="header-title", style={'font-size': '20px'})
     ], className='header', style={'height': '60px'}),
