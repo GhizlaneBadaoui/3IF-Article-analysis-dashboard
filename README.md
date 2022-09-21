@@ -11,7 +11,9 @@
 - functions.py : contient les données filtrées envoyées aux graphes.
     
 ## Lancer l'application :
-  - Commande : python main.py, puis python app.py
+  - Dans main.py (lignes 10 et 11) et app.py (ligne 35) : changer le nom de l'index et le type de document pour le document d'Elasticsearch à utiliser.
+  - Préparer les index d'Elasticsearch : python main.py
+  - Commande : python app.py
 
 ## Version Elasticsearch : 7.17.5
 
